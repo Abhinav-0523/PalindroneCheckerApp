@@ -1,9 +1,9 @@
 /*
 ================================================================================================================
-MAIN CLASS - UseCase2PalindromeApp
+MAIN CLASS - UseCase3PalindromeApp
 ================================================================================================================
 
-Use Case 2: Hardcoded Palindrome Validation
+Use Case 3: Hardcoded Palindrome Validation
 
 Description:
 This class represents basic palindrome validation using
@@ -16,11 +16,12 @@ At this stage, the application:
 - Stores a Hardcoded String
 - Reverses the String and stores it
 - Compares to the Original and Checks if the String is Palindrome.
+- Prints the Original String as Well as the Reversed String for the User to see.
 
 
 The goal is to find if a Hardcoded string is Palindrome or not.
 
-@author Abhianv-0523
+@author Abhinav-0523
 @version 2.0
  */
 
@@ -33,6 +34,8 @@ public class PalindromeCheckerApp
         System.out.println("Version: 1.0");
         String txt = "123321";
         String rev = new StringBuilder(txt).reverse().toString();
+        System.out.println("The Original String : "+txt);
+        System.out.println("The Reversed String : "+txt);
         if(txt.equals(rev))
             System.out.println("The String "+txt+" is a Palindrome");
         else
