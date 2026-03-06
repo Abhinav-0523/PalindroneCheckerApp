@@ -1,30 +1,41 @@
-/**
-* ========================================
- * MAIN CLASS -  UseCase1PalindromeApp
- * ===========================================
- *
- * Use Case 1: Application Entry & Welcome Message
- *
- * Description:
- * This class represents the entry points of the
- * Palindrome Checker Management System
- *
- * At this stage, the application:
- * - Starts execution from the main()method
- * -Displays a welcome message
- * -Shows application version
- *
- * No palindrome logic is implemented yet.
- *
- * The goal is to establish a clear startup flow.
- *
- * @author Abhinav-0523
- * @version 1.0
-*/
-public class PalindromeCheckerApp {
-    public static void main(String[] args) {
-        System.out.println("Welcome to the Palindrome Checker Management System");
-        System.out.println("Version 1.0");
-        System.out.println("System initialized successfully");
+/*
+================================================================================================================
+MAIN CLASS - UseCase2PalindromeApp
+================================================================================================================
+
+Use Case 2: Hardcoded Palindrome Validation
+
+Description:
+This class represents basic palindrome validation using
+a Hardcoded String Value
+
+At this stage, the application:
+- Starts execution from the main method
+- Displays a welcome message
+- Shows application Version
+- Stores a Hardcoded String
+- Reverses the String and stores it
+- Compares to the Original and Checks if the String is Palindrome.
+
+
+The goal is to find if a Hardcoded string is Palindrome or not.
+
+@author Abhianv-0523
+@version 2.0
+ */
+
+public class PalindromeCheckerApp
+{
+    public static void main(String args[])
+    {
+        System.out.println("Welcome to The Palindrome Checker");
+        System.out.println("Author: Abhinav-0523");
+        System.out.println("Version: 1.0");
+        String txt = "123321";
+        String rev = new StringBuilder(txt).reverse().toString();
+        if(txt.equals(rev))
+            System.out.println("The String "+txt+" is a Palindrome");
+        else
+            System.out.println("The String "+txt+" is Not a Palindrome");
     }
 }
